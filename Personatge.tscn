@@ -16,5 +16,8 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = -14.0
+margin_top = -45.0
+margin_right = 15.0
+margin_bottom = -31.0
+text = "UEE"
