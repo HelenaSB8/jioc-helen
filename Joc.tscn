@@ -13,7 +13,6 @@ script/source = "extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = \"text\"
-
 "
 
 [node name="joc" type="Node2D"]
@@ -26,206 +25,182 @@ position = Vector2( 0, -40 )
 rotating = true
 current = true
 
-[node name="StaticBody2D" parent="." instance=ExtResource( 3 )]
+[node name="obstacle" parent="." instance=ExtResource( 3 )]
 position = Vector2( 104, 284 )
 scale = Vector2( 3.83026, 3.48097 )
 script = SubResource( 1 )
 
-[node name="StaticBody2D5" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D5" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 68.1416, -171.504 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D3" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D3" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 103.387, -193.337 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D2" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D2" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( -1.30539, -168.631 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D4" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D4" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 72.3188, -4.30916 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D6" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D6" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 952.71, -2.9983 )
 scale = Vector2( 6.88288, 0.804689 )
 
-[node name="StaticBody2D7" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D7" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 36.29, -133.583 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D8" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D8" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 108.087, -34.4732 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D20" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D20" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 580.117, -140.765 )
 scale = Vector2( 1.79697, 0.231168 )
 
-[node name="StaticBody2D9" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D9" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 150.381, -92.503 )
 scale = Vector2( 1.79697, 0.231168 )
 
-[node name="StaticBody2D21" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D21" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 525.03, -89.9175 )
 scale = Vector2( 1.79697, 0.231168 )
 
-[node name="StaticBody2D22" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D22" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 465.243, -139.042 )
 scale = Vector2( 1.79697, 0.231168 )
 
-[node name="StaticBody2D10" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D10" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 168.918, -172.653 )
 scale = Vector2( 0.363244, 0.606041 )
 
-[node name="StaticBody2D23" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D23" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 261.862, -141.34 )
 rotation = 1.93409
 scale = Vector2( 0.394478, 0.559351 )
 
-[node name="StaticBody2D39" parent="StaticBody2D" instance=ExtResource( 3 )]
-position = Vector2( 411.199, -92.7902 )
+[node name="StaticBody2D39" parent="obstacle" instance=ExtResource( 3 )]
+position = Vector2( 440.524, -100.605 )
 rotation = 0.812246
 scale = Vector2( 0.381141, 0.580222 )
 
-[node name="StaticBody2D24" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D24" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 463.937, -216.319 )
 rotation = 1.93409
 scale = Vector2( 0.394478, 0.559351 )
 
-[node name="StaticBody2D26" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D26" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 641.471, -221.49 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D27" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D27" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 640.426, -164.322 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D28" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D28" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 721.622, -193.911 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D29" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D29" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 722.144, -131.573 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D30" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D30" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 800.468, -166.62 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D45" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D45" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1241.17, -214.308 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D46" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D46" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1304.35, -187.591 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D48" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D48" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1355.78, -134.733 )
 rotation = 1.5708
 scale = Vector2( 0.430914, 1.30539 )
 
-[node name="StaticBody2D47" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D47" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1410.35, -187.017 )
 rotation = 1.5708
 scale = Vector2( 0.399693, 0.550775 )
 
-[node name="StaticBody2D32" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D32" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1021.34, -207.701 )
 rotation = 1.97327
 scale = Vector2( 0.393384, 0.561121 )
 
-[node name="StaticBody2D31" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D31" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 863.91, -229.246 )
 scale = Vector2( 0.363244, 0.606041 )
 
-[node name="StaticBody2D25" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D25" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 535.734, -209.137 )
 scale = Vector2( 0.363244, 0.606041 )
 
-[node name="StaticBody2D11" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D11" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 202.858, -103.994 )
 scale = Vector2( 1.79697, 0.231168 )
 
-[node name="StaticBody2D12" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D12" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 310.684, -47.9751 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D13" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D13" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 311.206, -196.497 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D16" parent="StaticBody2D" instance=ExtResource( 3 )]
-visible = false
+[node name="StaticBody2D16" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 405.455, -58.6044 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D17" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D17" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 358.2, -16.9493 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D18" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D18" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 357.939, -166.046 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D19" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D19" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 396.579, -206.264 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D33" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D33" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 997.843, -108.878 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D34" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D34" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1040.4, -84.7465 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D36" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D36" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1081.13, -114.336 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D37" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D37" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1125.25, -82.161 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D40" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D40" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1158.93, -56.0189 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D41" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D41" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1159.71, -195.061 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D42" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D42" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1197.83, -85.0338 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D44" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D44" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1243.78, -120.369 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D43" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D43" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1197.83, -234.13 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D38" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D38" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1125.51, -227.236 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D35" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D35" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( 1078.52, -277.222 )
-scale = Vector2( 1, 1 )
 
-[node name="StaticBody2D14" parent="StaticBody2D" instance=ExtResource( 3 )]
+[node name="StaticBody2D14" parent="obstacle" instance=ExtResource( 3 )]
 position = Vector2( -32.8959, -68.0845 )
 scale = Vector2( 1.71414, -0.0833342 )
 
@@ -322,4 +297,50 @@ position = Vector2( -639, 321 )
 [node name="Area2D7" parent="Area2D" instance=ExtResource( 1 )]
 position = Vector2( -784, 203 )
 
-[connection signal="body_entered" from="StaticBody2D" to="Personatge" method="_on_StaticBody2D_body_entered"]
+[connection signal="body_entered" from="obstacle" to="Personatge" method="_on_obstacle_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D5" to="Personatge" method="_on_StaticBody2D5_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D3" to="Personatge" method="_on_StaticBody2D3_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D2" to="Personatge" method="_on_StaticBody2D2_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D4" to="Personatge" method="_on_StaticBody2D4_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D6" to="Personatge" method="_on_StaticBody2D6_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D7" to="Personatge" method="_on_StaticBody2D7_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D8" to="Personatge" method="_on_StaticBody2D8_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D20" to="Personatge" method="_on_StaticBody2D20_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D9" to="Personatge" method="_on_StaticBody2D9_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D21" to="Personatge" method="_on_StaticBody2D21_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D22" to="Personatge" method="_on_StaticBody2D22_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D10" to="Personatge" method="_on_StaticBody2D10_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D23" to="Personatge" method="_on_StaticBody2D23_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D39" to="Personatge" method="_on_StaticBody2D39_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D24" to="Personatge" method="_on_StaticBody2D24_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D26" to="Personatge" method="_on_StaticBody2D26_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D27" to="Personatge" method="_on_StaticBody2D27_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D28" to="Personatge" method="_on_StaticBody2D28_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D29" to="Personatge" method="_on_StaticBody2D29_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D30" to="Personatge" method="_on_StaticBody2D30_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D45" to="Personatge" method="_on_StaticBody2D45_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D46" to="Personatge" method="_on_StaticBody2D46_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D48" to="Personatge" method="_on_StaticBody2D48_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D47" to="Personatge" method="_on_StaticBody2D47_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D32" to="Personatge" method="_on_StaticBody2D32_body_entered"]
+[connection signal="body_exited" from="obstacle/StaticBody2D31" to="Personatge" method="_on_StaticBody2D31_body_exited"]
+[connection signal="body_entered" from="obstacle/StaticBody2D25" to="Personatge" method="_on_StaticBody2D25_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D11" to="Personatge" method="_on_StaticBody2D11_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D12" to="Personatge" method="_on_StaticBody2D12_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D13" to="Personatge" method="_on_StaticBody2D13_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D16" to="Personatge" method="_on_StaticBody2D16_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D17" to="Personatge" method="_on_StaticBody2D17_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D18" to="Personatge" method="_on_StaticBody2D18_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D19" to="Personatge" method="_on_StaticBody2D19_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D33" to="Personatge" method="_on_StaticBody2D33_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D34" to="Personatge" method="_on_StaticBody2D34_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D36" to="Personatge" method="_on_StaticBody2D36_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D37" to="Personatge" method="_on_StaticBody2D37_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D40" to="Personatge" method="_on_StaticBody2D40_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D41" to="Personatge" method="_on_StaticBody2D41_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D42" to="Personatge" method="_on_StaticBody2D42_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D44" to="Personatge" method="_on_StaticBody2D44_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D43" to="Personatge" method="_on_StaticBody2D43_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D38" to="Personatge" method="_on_StaticBody2D38_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D35" to="Personatge" method="_on_StaticBody2D35_body_entered"]
+[connection signal="body_entered" from="obstacle/StaticBody2D14" to="Personatge" method="_on_StaticBody2D14_body_entered"]
