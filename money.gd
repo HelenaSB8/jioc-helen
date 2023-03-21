@@ -16,6 +16,7 @@ func _ready():
 func _on_Area2D_body_entered(body):
 	$ColorRect.color = Color(1,1,0)
 
-
+func reset():
+	$ColorRect.color = Color(0,0,1)
 
 

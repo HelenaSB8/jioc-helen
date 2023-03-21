@@ -1,0 +1,362 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://money.tscn" type="PackedScene" id=1]
+[ext_resource path="res://obstacle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Personatge.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Joc.gd" type="Script" id=4]
+
+[node name="joc" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Personatge" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, -40 )
+
+[node name="Camera2D" type="Camera2D" parent="Personatge"]
+rotating = true
+current = true
+
+[node name="Arees" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 879, -228 )
+
+[node name="Area2D4" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 1283, -134 )
+
+[node name="Area2D10" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 1853, -354 )
+
+[node name="Area2D13" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 2298, -351 )
+
+[node name="Area2D15" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 2552, -378 )
+
+[node name="Area2D16" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 2862, -286 )
+
+[node name="Area2D17" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 3172, -401 )
+
+[node name="Area2D18" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 3416, -323 )
+
+[node name="Area2D19" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 3523, -382 )
+
+[node name="Area2D20" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 3616, -452 )
+
+[node name="Area2D21" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 3705, -527 )
+
+[node name="Area2D22" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 3864, -384 )
+
+[node name="Area2D23" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4062, -307 )
+
+[node name="Area2D24" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4239, -411 )
+
+[node name="Area2D25" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4409, -265 )
+
+[node name="Area2D26" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4543, -162 )
+
+[node name="Area2D27" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4702, -273 )
+
+[node name="Area2D28" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4702, -273 )
+
+[node name="Area2D29" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 4861, -377 )
+
+[node name="Area2D30" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 5075, -288 )
+
+[node name="Area2D31" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 5307, -371 )
+
+[node name="Area2D32" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 5499, -273 )
+
+[node name="Area2D14" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 2087, -198 )
+
+[node name="Area2D11" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 1627, -171 )
+
+[node name="Area2D12" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 1473, -39 )
+
+[node name="Area2D5" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 1090, -50 )
+
+[node name="Area2D6" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 655, -145 )
+
+[node name="Area2D8" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 503, -123 )
+
+[node name="Area2D9" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 364, -24 )
+
+[node name="Area2D2" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 240, 93 )
+
+[node name="Area2D7" parent="Arees" instance=ExtResource( 1 )]
+position = Vector2( 95, -25 )
+
+[node name="Parets" type="Node2D" parent="."]
+
+[node name="obstacle" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 104, 284 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D5" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 365, -313 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D3" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 499.999, -389 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D2" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 99, -302.999 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D4" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 381, 269 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D6" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 3753.13, 273.563 )
+scale = Vector2( 26.3632, 2.8011 )
+
+[node name="StaticBody2D7" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 243, -180.998 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D8" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 518.001, 164 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D20" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2326, -205.999 )
+scale = Vector2( 6.88286, 0.804689 )
+
+[node name="StaticBody2D9" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 679.998, -38.0002 )
+scale = Vector2( 6.88286, 0.804689 )
+
+[node name="StaticBody2D21" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2115, -29.0001 )
+scale = Vector2( 6.88286, 0.804689 )
+
+[node name="StaticBody2D22" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1886, -200.001 )
+scale = Vector2( 6.88286, 0.804689 )
+
+[node name="StaticBody2D10" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 751, -317 )
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D23" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1107, -208 )
+rotation = 1.96699
+scale = Vector2( 1.39132, 2.11878 )
+
+[node name="StaticBody2D39" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1791.32, -66.203 )
+rotation = 0.764454
+scale = Vector2( 1.39132, 2.12891 )
+
+[node name="StaticBody2D24" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1881, -469 )
+rotation = 1.96699
+scale = Vector2( 1.39132, 2.11878 )
+
+[node name="StaticBody2D26" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2561, -487 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D27" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2557, -288 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D28" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2868, -390.998 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D29" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2870, -174.002 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D30" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 3170, -295.999 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D45" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4858, -462 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D46" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 5100, -368.999 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D48" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 5296.99, -185.002 )
+rotation = 1.5708
+scale = Vector2( 1.5, 4.99998 )
+
+[node name="StaticBody2D47" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 5506.01, -367.001 )
+rotation = 1.5708
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D32" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4016, -439.001 )
+rotation = 2.00887
+scale = Vector2( 1.39132, 2.12035 )
+
+[node name="StaticBody2D31" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 3413, -513.998 )
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D25" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 2156, -444 )
+scale = Vector2( 1.39132, 2.10961 )
+
+[node name="StaticBody2D11" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 880.999, -78 )
+scale = Vector2( 6.88286, 0.804689 )
+
+[node name="StaticBody2D12" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1294, 117 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D13" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1296, -400 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D16" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1657, 79.9998 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D17" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1476, 225 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D18" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1475, -294.001 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D19" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 1623, -433.999 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D33" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 3926, -95.001 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D34" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4089, -11 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D36" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4245.01, -114 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D37" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4414, -1.99997 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D40" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4543, 88.9999 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D41" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4545.99, -395.001 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D42" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4692, -12.0001 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D44" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4868, -135.001 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D43" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4692, -531 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D38" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4415, -507.002 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D35" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( 4235.01, -681.001 )
+scale = Vector2( 3.83026, 3.48097 )
+
+[node name="StaticBody2D14" parent="Parets" instance=ExtResource( 2 )]
+position = Vector2( -21.9999, 46.9999 )
+scale = Vector2( 6.5656, -0.290084 )
+
+[connection signal="body_entered" from="Parets/obstacle" to="Personatge" method="_on_obstacle_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D5" to="Personatge" method="_on_StaticBody2D5_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D3" to="Personatge" method="_on_StaticBody2D3_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D2" to="Personatge" method="_on_StaticBody2D2_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D4" to="Personatge" method="_on_StaticBody2D4_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D6" to="Personatge" method="_on_StaticBody2D6_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D7" to="Personatge" method="_on_StaticBody2D7_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D8" to="Personatge" method="_on_StaticBody2D8_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D20" to="Personatge" method="_on_StaticBody2D20_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D9" to="Personatge" method="_on_StaticBody2D9_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D21" to="Personatge" method="_on_StaticBody2D21_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D22" to="Personatge" method="_on_StaticBody2D22_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D10" to="Personatge" method="_on_StaticBody2D10_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D23" to="Personatge" method="_on_StaticBody2D23_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D39" to="Personatge" method="_on_StaticBody2D39_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D24" to="Personatge" method="_on_StaticBody2D24_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D26" to="Personatge" method="_on_StaticBody2D26_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D27" to="Personatge" method="_on_StaticBody2D27_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D28" to="Personatge" method="_on_StaticBody2D28_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D29" to="Personatge" method="_on_StaticBody2D29_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D30" to="Personatge" method="_on_StaticBody2D30_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D45" to="Personatge" method="_on_StaticBody2D45_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D46" to="Personatge" method="_on_StaticBody2D46_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D48" to="Personatge" method="_on_StaticBody2D48_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D47" to="Personatge" method="_on_StaticBody2D47_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D32" to="Personatge" method="_on_StaticBody2D32_body_entered"]
+[connection signal="body_exited" from="Parets/StaticBody2D31" to="Personatge" method="_on_StaticBody2D31_body_exited"]
+[connection signal="body_entered" from="Parets/StaticBody2D25" to="Personatge" method="_on_StaticBody2D25_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D11" to="Personatge" method="_on_StaticBody2D11_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D12" to="Personatge" method="_on_StaticBody2D12_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D13" to="Personatge" method="_on_StaticBody2D13_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D16" to="Personatge" method="_on_StaticBody2D16_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D17" to="Personatge" method="_on_StaticBody2D17_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D18" to="Personatge" method="_on_StaticBody2D18_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D19" to="Personatge" method="_on_StaticBody2D19_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D33" to="Personatge" method="_on_StaticBody2D33_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D34" to="Personatge" method="_on_StaticBody2D34_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D36" to="Personatge" method="_on_StaticBody2D36_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D37" to="Personatge" method="_on_StaticBody2D37_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D40" to="Personatge" method="_on_StaticBody2D40_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D41" to="Personatge" method="_on_StaticBody2D41_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D42" to="Personatge" method="_on_StaticBody2D42_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D44" to="Personatge" method="_on_StaticBody2D44_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D43" to="Personatge" method="_on_StaticBody2D43_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D38" to="Personatge" method="_on_StaticBody2D38_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D35" to="Personatge" method="_on_StaticBody2D35_body_entered"]
+[connection signal="body_entered" from="Parets/StaticBody2D14" to="Personatge" method="_on_StaticBody2D14_body_entered"]

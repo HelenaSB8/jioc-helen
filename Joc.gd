@@ -8,12 +8,14 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	print(name)
+	print(get_children())
+	for fill in $Parets.get_children():
+		fill.connect("restart", self, "restart")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func restart():
+	for area in $Arees.get_children():
+		area.reset()
 
 
 

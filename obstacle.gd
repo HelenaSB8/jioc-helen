@@ -1,9 +1,6 @@
 extends Area2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+signal restart
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,3 +13,8 @@ func _ready():
 #	pass
 
 
+
+
+func _on_obstacle_body_entered(body):
+	body.global_position = Vector2(0,-40)
+	emit_signal("restart")
